@@ -1,0 +1,55 @@
+Changing monitoring state from "Offline" to "Detecting serial connection"
+Performing autodetection with 7 port/baudrate candidates: /dev/ttyUSB0@115200, /dev/ttyUSB0@250000, /dev/ttyUSB0@230400, /dev/ttyUSB0@57600, /dev/ttyUSB0@38400, /dev/ttyUSB0@19200, /dev/ttyUSB0@9600
+Trying port /dev/ttyUSB0, baudrate 115200
+Connecting to port /dev/ttyUSB0, baudrate 115200
+Handshake attempt #1 with timeout 2.0s
+Connected to: Serial<id=0x70f59090, open=True>(port='/dev/ttyUSB0', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=2.0, xonxoff=False, rtscts=False, dsrdtr=False), starting monitor
+Send: N0 M110 N0*125
+Handshake attempt #2 with timeout 2.0s
+Send: N0 M110 N0*125
+Recv: start
+Changing monitoring state from "Detecting serial connection" to "Operational"
+Send: N0 M110 N0*125
+Recv: echo:Marlin V0.0.2
+Recv: 
+Recv: echo: Last Updated: 2019-09-04 | Author: (thisiskeithb, Mega Zero)
+Recv: echo:Compiled: Jan 30 2021
+Recv: echo: Free Memory: 10137  PlannerBufferBytes: 1232
+Recv: echo:SD init fail
+Recv: ok
+Send: N1 M115*39
+Recv: FIRMWARE_NAME:Marlin V0.0.2 (Github) SOURCE_CODE_URL:https://github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Mega Zero EXTRUDER_COUNT:1 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff
+Recv: Cap:SERIAL_XON_XOFF:0
+Recv: Cap:EEPROM:1
+Recv: Cap:VOLUMETRIC:1
+Recv: Cap:AUTOREPORT_TEMP:1
+Recv: Cap:PROGRESS:0
+Recv: Cap:PRINT_JOB:1
+Recv: Cap:AUTOLEVEL:0
+Recv: Cap:Z_PROBE:0
+Recv: Cap:LEVELING_DATA:0
+Recv: Cap:BUILD_PERCENT:0
+Recv: Cap:SOFTWARE_POWER:0
+Recv: Cap:TOGGLE_LIGHTS:0
+Recv: Cap:CASE_LIGHT_BRIGHTNESS:0
+Recv: Cap:EMERGENCY_PARSER:0
+Recv: Cap:AUTOREPORT_SD_STATUS:0
+Recv: Cap:THERMAL_PROTECTION:0
+Recv: ok
+Send: M21
+Recv: echo:SD init fail // no sd card was inserted, so this is normal
+Recv: ok
+Send: M155 S2
+Recv: ok
+Recv:  T:18.67 /0.00 B:17.81 /0.00 @:0 B@:0
+Recv:  T:18.71 /0.00 B:17.66 /0.00 @:0 B@:0
+Recv:  T:18.75 /0.00 B:17.58 /0.00 @:0 B@:0
+Recv:  T:18.63 /0.00 B:17.81 /0.00 @:0 B@:0
+Recv:  T:18.75 /0.00 B:17.89 /0.00 @:0 B@:0
+Send: G91
+Recv: ok
+Send: G0 Z10 F200
+Recv: ok
+Send: G90
+Recv: ok
+Recv:  T:18.59 /0.00 B:17.89 /0.00 @:0 B@:0
