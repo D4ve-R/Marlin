@@ -43,6 +43,7 @@
 #endif
 
 #include "pins_MELZI.h" // ... SANGUINOLOLU_12 ... SANGUINOLOLU_11
+#include "pins_MEGA_SE.h" // TMC Support
 
 //
 // For the stock CR-10 enable CR10_STOCKDISPLAY in Configuration.h
